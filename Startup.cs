@@ -1,4 +1,5 @@
-﻿using Microsoft.Owin;
+﻿//import library
+using Microsoft.Owin;
 using Owin;
 
 [assembly: OwinStartupAttribute(typeof(OnlineBusReservationV6.Startup))]
@@ -8,6 +9,7 @@ namespace OnlineBusReservationV6
     {
         public void Configuration(IAppBuilder app)
         {
+            //Configure the app
             ConfigureAuth(app);
         }
     }
