@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿//import libraries
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace OnlineBusReservationV6.Models
