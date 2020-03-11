@@ -12,17 +12,21 @@ namespace OnlineBusReservationV6.Models
         [Required]
         public int Id { get; set; }
 
+        //Trip Variable
         [Required]
         [Display(Name = "Trip")]
         public Trip Trip { get; set; }
 
+        //Booking Time
         [Required]
         [Display(Name = "Booking Time")]
         public String BookingTime { get; set; }
 
+        //Check Blocked
         [Required]
         public bool IsBlocked { get; set; }
 
+        //Payment function
         public virtual Payment Payment { get; set; }
 
         [Required]

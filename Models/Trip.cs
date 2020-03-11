@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+//Class Define for Trip
 namespace OnlineBusReservationV6.Models
 {
     public class Trip
