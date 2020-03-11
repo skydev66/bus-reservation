@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+//Online Bus reservation
 namespace OnlineBusReservationV6.Models
 {
     public class Bus
