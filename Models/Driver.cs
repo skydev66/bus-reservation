@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
+//Model for driver
 namespace OnlineBusReservationV6.Models
 {
     public class Driver
@@ -11,18 +12,21 @@ namespace OnlineBusReservationV6.Models
         [Required]
         public int Id { get; set; }
 
+        //Function for error message
         [Required(ErrorMessage = "This Field Is Required")]
         [Display(Name = "Driver Name")]
         [StringLength(100, MinimumLength = 5)]
         [DataType(DataType.Text, ErrorMessage ="This Field Is Required, Enter Your Name in Text Pattern Only")]
         public String Name { get; set; }
 
+        //Send error report
         [Required(ErrorMessage = "This Field Is Required")]
         [Display(Name = "Identity Number")]
         [StringLength(14, MinimumLength = 14)]
         [DataType(DataType.Text, ErrorMessage = "This Field Is Required, Enter Your Identity Number in Text Pattern Only")]
         public String SSN { get; set; }
 
+        //Driver license string send
         [Required(ErrorMessage = "This Field Is Required")]
         [Display(Name="Driver Licence")]
         [DataType(DataType.Text, ErrorMessage = "This Field Is Required, Enter Your Driving Licence Number in Text Pattern Only")]
